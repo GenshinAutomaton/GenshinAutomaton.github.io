@@ -1,0 +1,1 @@
+# GenshinAutomaton.github.io
