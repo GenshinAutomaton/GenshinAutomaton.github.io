@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>原神自动机</title>
     <link rel="icon" type="image/x-icon" href="static/image/goTop.png"/>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-
     <link rel="stylesheet" href="static/css/home.css">
-    <link rel="stylesheet" href="static/css/index.css"/>
+    <link rel="stylesheet" href="static/css/Mijing.css">
     <link rel="stylesheet" href="static/css/header.css">
     <link rel="stylesheet" href="static/css/footer.css">
     <link rel="stylesheet" href="static/css/login.css">
+    <link rel="stylesheet" href="static/css/tip.css">
     <link rel="stylesheet" href="static/css/font.css">
     <link rel="stylesheet" href="static/css/animate.min.css">
 </head>
@@ -32,7 +33,7 @@
             <div class="sk-circle11 sk-child"></div>
             <div class="sk-circle12 sk-child"></div>
         </div>
-    </section>  
+    </section>
     <div class="header">
         <div class="header__navbar">
             <div class="box"><a href="index.html">首&nbsp页</a></div>
@@ -50,6 +51,7 @@
                 <li onclick="renew()">续订邮箱推送</li>
             </div>
         </div>
+
         <div class="mhy-account-flow mhy-account-flow-dialog ys-theme is-pc" style="display: none;" id="login">
             <div class="mhy-account-flow-dialog-content" id="login1">
                 <div class="mhy-account-flow-login">
@@ -88,6 +90,7 @@
                 </div>
             </div>
         </div>
+
         <div class="mhy-account-flow mhy-account-flow-dialog ys-theme is-pc" style="display: none;" id="resister">
             <div class="mhy-account-flow-dialog-content" id="login2">
                 <div class="mhy-account-flow-login">
@@ -131,123 +134,56 @@
             </div>
         </div>
     </div>
-    <div class="bgWrap">
-        <img class="poster__concept wow fadeInUp" src="static/image/index/final.png" alt="Head background">
-        <span class="poster__text wow swing">
-            <h2>原神自动机</h2>
-            <h4>项目简介</h4>
-        </span>
+    <div role="alert" class="tip" style="z-index: 2112;">
+        <p class="el-message__content">已经添加到控制台</p>
     </div>
-    <div class="king">
-        <div class="wow slideInLeft row row1" data-wow-offset="-100">
-        </div>
-        <img class="side__img1 wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1s" src="static/image/index/index(1).png" alt="shit">
-        <div class="wow slideInRight row row2" data-wow-offset="-100">
-        </div>
-        <img class="side__img2 wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1s" src="static/image/index/index(3).png" alt="shit">
-        <div class="wow slideInLeft row row1" data-wow-offset="-100">
-        </div>
-        <img class="side__img1 wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1s" src="static/image/index/index(4).png" alt="shit">
-    </div>
-    <div class="new">
-        <div class="news__tab wow fadeInUp" data-wow-duration="1s">
-            <h3>
-                更新资讯
-            </h3>
-            <div class="news__tab__list">
-                <ul class="news__tab__list__ul">
-                    <li class="currenters">最新</li>
-                    <li>更新</li>
-                    <li>修复</li>
-                    <li>计划</li>
-                </ul>
-                <div class="tab_con">
-                    <div class="item" style="display: block;">
-                        <!-- 最新 -->
-                        <li>
-                            <a><p class="item_p">【修复】重构前端框架</p>
-                            <p class="item_p2">2022/10/26</p></a>
-                        </li>
-                        <li>
-                            <a><p class="item_p">【更新】完成前后端联查</p>
-                            <p class="item_p2">2022/9/30</p></a>
-                        </li>
-                        <li>
-                            <a><p class="item_p">【更新】完成控制台开发</p>
-                            <p class="item_p2">2022/9/30</p></a>
-                        </li>
-                        <li>
-                            <a><p class="item_p">【更新】完成网页服务器部署</p>
-                            <p class="item_p2">2022/9/20</p></a>
-                        </li>
-                        <li>
-                            <a><p class="item_p">【更新】完成岩中幽谷怪物的神经网络二分类识别</p>
-                            <p class="item_p2">2022/7/30</p></a>
-                        </li>
-                    </div>
-                    <div class="item" style="display: none;">
-                        <!-- 更新 -->
-                        <li>
-                            <a><p class="item_p">【更新】完成控制台开发</p>
-                            <p class="item_p2">2022/9/30</p></a>
-                        </li>
-                        <li>
-                            <a><p class="item_p">【更新】完成网页服务器部署</p>
-                            <p class="item_p2">2022/9/20</p></a>
-                        </li>
-                        <li>
-                            <a><p class="item_p">【更新】完成岩中幽谷怪物的神经网络二分类识别</p>
-                            <p class="item_p2">2022/7/30</p></a>
-                        </li>
-                    </div>
-                    <div class="item" style="display: none;">
-                        <!-- 修复 -->
-                        <li>
-                            <a><p class="item_p">【修复】重构前端框架</p>
-                            <p class="item_p2">2022/10/26</p></a>
-                        </li>
-                        <li>
-                            <a><p class="item_p">【修复】完成前后端联查</p>
-                            <p class="item_p2">2022/9/30</p></a>
-                        </li>
-                    </div>
-                    <div class="item" style="display: none;">
-                        <!-- 预告 -->
-                        <li>
-                            <a><p class="item_p">【计划】完成全部副本的自动靠近和攻击</p>
-                            <p class="item_p2">2022/10/++</p></a>
-                        </li>
-                        <li>
-                            <a><p class="item_p">【计划】完成全部副本的怪物识别</p>
-                            <p class="item_p2">2022/10/++</p></a>
-                        </li>
-                    </div>
-                </div>
+    <img class="left_img lr" src="static/image/left.png">
+    <img class="right_img lr" src="static/image/right.png">
+    <div class="before_B-f"></div>
+    <div class="Ins_name">仲夏庭园</div>
+    <div class="after_B-f" onclick="clickAddToCmd()" ></div>
+    <div class="add_to_cmd">添加到控制台</div>
+    <div class="B-f" >
+        <div class="B-f__row">
+            <div class="fucking_block" style="opacity: 0;"></div>
+            <div class="rewards" style="opacity: 0;">
+                <img src="static/image/Mijing/reward1-0.png">
+                <img src="static/image/Mijing/reward1-1.png">
+            </div>
+            <div class="arrow_box box_left"><div class="left_arrow arrow"></div></div>
+            <div class="InsB" style="opacity: 0;"></div>
+            <img class="light"  src="static/image/MiJing/bg1.png">
+            <div class="InsB"></div>
+            <div class="arrow_box box_right"><div class="right_arrow arrow"></div></div>
+            <div class="fucking_block"></div>
+            <div class="rewards">
+                <img id="reward1" src="static/image/Mijing/reward1-0.png">
+                <img id="reward2" src="static/image/Mijing/reward1-1.png">
             </div>
         </div>
-        <div class="footer wow fadeInUp" data-wow-duration="1s">
-            <div class="footer_text">
-                <h2 style="color: #000000;">原神脚本声明</h2>
-                <p style="color: gray;">
-                    本软件自发布后所有用户均可免费使用，用户禁止出售本软件。
-                </p>
-                <p class="copyright-text" style="color: gray;">&copy 2022 GenshinAutomata 版权所有 <a
-                        href="https://beian.miit.gov.cn/" target="_blank"
-                        style="color: gray;">湘ICP备2022002291号-1</a><br>
-                    Software Design by GenshinAutomata<br>
-                </p>
-            </div>
-            <div class="footer_text">
-                <h2 style="color: #000000;">联系方式</h2>
-                <p style="color: gray;">
-                    QQ群：639227600<br>
-                    合作QQ：1251031190<br>
-                    邮箱：lmq122677@qq.com<br>
-                </p>
-            </div>
-        </div>
-        <a href="#back-top" class="go-top"><img class="go-top" src="static/image/goTop.png"></a>
     </div>
+    <div class="footer wow fadeInUp" data-wow-duration="1s">
+        <div class="footer_text">
+            <h2 style="color: #000000;">原神脚本声明</h2>
+            <p style="color: gray;">
+                本软件自发布后所有用户均可免费使用，用户禁止出售本软件。
+            </p>
+            <p class="copyright-text" style="color: gray;">&copy 2022 GenshinAutomata 版权所有 <a
+                    href="https://beian.miit.gov.cn/" target="_blank"
+                    style="color: gray;">湘ICP备2022002291号-1</a><br>
+                Software Design by GenshinAutomata<br>
+            </p>
+        </div>
+        <div class="footer_text">
+            <h2 style="color: #000000;">联系方式</h2>
+            <p style="color: gray;">
+                QQ群：639227600<br>
+                合作QQ：1251031190<br>
+                邮箱：lmq122677@qq.com<br>
+            </p>
+        </div>
+    </div>
+    <a href="#back-top" class="go-top"><img class="go-top" src="static/image/goTop.png"></a>
     <div class="music">
         <div class="msc_title_bg">
             <h4 class="msc_title">Music Name</h4>
@@ -268,12 +204,13 @@
         </div>
     </div>
 </body>
+<script src="static/js/MiJing.js"></script>
 <script src="static/js/index.js"></script>
-<script src="static/js/login.js"></script>
 <script src="static/js/tab_con.js"></script>
-<script src="static/js/jquery.js"></script>
 <script src="static/js/jQuery(2).js"></script>
 <script src="static/js/wow.min.js"></script>
 <script src="static/js/custom.js"></script>
+<script src="static/js/jquery.cookie.js"></script>
+<script src="static/js/login.js"></script>
 <script src="static/js/music.js"></script>
 </html>

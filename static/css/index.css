@@ -1,0 +1,206 @@
+/*色卡：
+  紫 #CCCCFF
+  白 #FFFFFF
+  蓝 #99CCFF
+*/
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.bgWrap {
+  position: relative;
+  height: 750px;
+  width: 1450px;
+  margin: 60px auto;
+  border: 30px solid #99CCFF;
+  border-radius: 70px;
+  object-fit: cover;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+  background: url(../image/index/final_back.jpg);
+}
+.poster__concept {
+  height: 750px;
+  margin-left: 660px;
+}
+.poster__text {
+  opacity: 0.7;
+  position: absolute;
+  top: 45px;
+  left: 130px;
+  height: 600px;
+  width: 400px;
+  border-radius: 30px;
+  background-color: #FFFFFF;
+  padding: 30px;
+  transition: .2s;
+}
+.poster__text h2 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.poster__text:hover {
+  top: 55px;
+  left: 140px;
+  box-shadow: 0px 0px 0px rgba(0,0,0,0.1),
+  0px 0px 0px rgba(255,255,255,0.3),
+  inset 18px 18px 20px rgba(0,0,0,0.1),
+  inset -18px -18px 20px rgba(255,255,255,0.3);
+  transition: .2s;
+}
+.king {
+  margin-top: 100px;
+  padding-top: 90px;
+  position: relative;
+  height: 1980px;
+  background: url(../image/back2.jpg);
+}
+.king li {
+  position: relative;
+  float: left;
+  width: 105px;
+  height: 600px;
+  margin-right: 10px;
+}
+.king li.current {
+  width: 800px;
+  height: 530px;
+}
+.king li.current .big {
+  display: block;
+}
+.row {
+  margin-bottom: 70px;
+  width: 45%;
+  height: 28%;
+  border-radius: 50px;
+  background-color: #FFFFFF;
+  border: 30px double #CCCCFF;
+  transition: .2s;
+}
+.row:hover {
+  transition: .2s;
+  width: 47%;
+  height: 30%;
+  box-shadow: 10px 10px 18px 18px rgba(0, 0, 0, 0.3);
+}
+.row1 {
+  float: left;
+  margin-left: 15%;
+}
+.row1:hover {
+  margin-left: 14%;
+}
+.side__img1 {
+  float: left;
+  position: relative;
+  margin-left: 100px;
+  height: 500px;
+  box-shadow: 10px 15px rgba(0, 0, 0, 0.1);
+}
+.row2 {
+  float: right;
+  margin-right: 15%;
+}
+.side__img2 {
+  float: right;
+  position: relative;
+  margin-right: 100px;
+  height: 500px;
+  box-shadow: -10px 15px rgba(0, 0, 0, 0.1);
+}
+.row2:hover {
+  margin-right: 14%;
+}
+.new {
+    background: url(../image/index/news.jpg);
+    padding-top: 100px;
+    padding-bottom: 1px;
+    width: 100%;
+    position: relative;
+}
+.new h3 {
+  color: gray;
+  position: relative;
+  margin: auto;
+  top: 50px;
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+}
+.news__tab {
+  position: relative;
+  margin: auto;
+  top: 0;
+  height: 470px;
+  width: 600px;
+  background-color: #FFFFFF;
+  border-radius: 50px;
+  border: 10px dashed #99CCFF;
+  transition: .2s;
+}
+.item li:hover {
+  background: rgba(153, 204, 255, 0.5);
+  cursor: pointer;
+}
+.item li:hover a {
+  text-decoration: none;
+}
+.news__tab:hover {
+  transition: .2s;
+  top: -20px;
+  box-shadow: 0px 10px 18px 18px rgba(0, 0, 0, 0.3);
+}
+.news__tab__list {
+  position: relative;
+  top: 80px;
+  width: 580px;
+  height: 320px;
+}
+.news__tab__list__ul {
+  position: relative;
+  height: 40px;
+  width: 600px;
+  padding: 0 40px;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 5px;
+}
+.news__tab__list__ul li {
+  position: relative;
+  padding: 10px 19px 2px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  float: left;
+}
+.currenters {
+  color: #9CF;
+  border-bottom: 3px solid #9CF;
+}
+.tab_con {
+    position: relative;
+    width: 540px;
+    height: 265px;
+    margin: 0 20px 0;
+}
+.tab_con a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 95%;
+  height: 50px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.08);
+  box-sizing: content-box;
+  font-size: 16px;
+  color: #fff;
+}
+.item_p {
+  width: 480px;
+  height: 20px;
+  line-height: 20px;
+  padding-left: 24px;
+}
+.item li {
+  border-radius: 30px;
+}

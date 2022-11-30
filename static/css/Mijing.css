@@ -1,0 +1,163 @@
+.before_B-f {
+    position: absolute;
+    left: 410px;
+    top: 215px;
+    margin: auto;
+    width: 1000px;
+    height: 200px;
+    background-color: #FFF;
+    z-index: 100;
+    opacity: 0;
+}
+.Ins_name {
+    position: absolute;
+    top: 270px;
+    left: 810px;
+    text-align: center;
+    font-size: 50px;
+    color: #FFF;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    transition: .2s;
+    opacity: 0;
+}
+.before_B-f:hover + .Ins_name{
+    transition: .2s;
+    opacity: 1;
+    transform: translateY(-70px);
+}
+.before_B-f:hover ~ .B-f {
+    transform: translateY(-30px);
+}
+.B-f {
+    transform: translateY(-100px);
+    position: relative;
+    top: 200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .2s;
+    height: 700px;
+    margin: 50px auto 150px;
+}
+.B-f__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.arrow {
+    opacity: 1;
+    margin-top: 25px;
+    width: 70px;
+    height: 70px;
+    border-top: 20px solid #FFF;
+    border-right: 20px solid #FFF;
+}
+.arrow_box {
+    border-radius: 20px;
+    transition: .2s;
+    width: 80px;
+    height: 120px;
+    margin: 50px;
+    background-color: #99CCFF;
+    box-shadow: 10px 10px 18px rgba(0, 0, 0, 0.3);
+}
+.left_arrow {
+    margin-left: 20px;
+    transform: rotate(-135deg);
+}
+.light {
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    border-radius: 50px;
+    border: 30px solid #99CCFF;
+    box-shadow: 18px 18px 18px rgba(0, 0, 0, 0.5);
+}
+.InsB {
+    position: relative;
+    transform: translateX(-527px);
+    width: 55px;
+    height: 55px;
+    opacity: 0.6;
+    border-radius: 30px;
+    border: 5px solid #FFF;
+    transition: .2s;
+    z-index: 999;
+}
+.InsB:hover {
+    transition: .2s;
+    opacity: 0.8;
+}
+.right_arrow {
+    float: right;
+    margin-right: 20px;
+    transform: rotate(45deg);
+}
+.arrow_box:hover {
+    width: 140px;
+    transition: .2s;
+}
+.after_B-f {
+    position: absolute;
+    left: 410px;
+    top: 615px;
+    margin: auto;
+    width: 1000px;
+    height: 200px;
+    background-color: #FFF;
+    z-index: 100;
+    opacity: 0;
+}
+.add_to_cmd {
+    position: absolute;
+    text-align: center;
+    top: 690px;
+    left: 760px;
+    font-size: 50px;
+    color: #FFF;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    transition: .2s;
+    opacity: 0;
+}
+.after_B-f:hover ~ .B-f{
+    transform: translateY(-170px);
+}
+.after_B-f:hover + .add_to_cmd{
+    transition: .2s;
+    opacity: 1;
+    transform: translateY(70px);
+}
+.rewards {
+    position: relative;
+    left: -52%;
+    transition: .2s;
+    background-color: #FFF;
+    width: 118px;
+    border-radius: 10px;
+    border: 5px solid #CCCCFF;
+    padding: 10px;
+    transform: translateX(100px);
+    opacity: 0;
+    z-index: 998;
+}
+.rewards img {
+    width: 40px;
+}
+.fucking_block {
+    position: relative;
+    left: -45%;
+    transition: .2s;
+    background-color: #CCCCFF;
+    width: 30px;
+    height: 20px;
+    border-radius: 3px;
+    transform: translateX(100px);
+    opacity: 0;
+    z-index: 998;
+}
+.InsB:hover ~ .rewards, .InsB:hover ~ .fucking_block {
+    transition: .2s;
+    transform: translateX(0);
+    opacity: 1;
+}

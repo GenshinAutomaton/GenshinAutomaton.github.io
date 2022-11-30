@@ -1,0 +1,22 @@
+.tip {
+  visibility: hidden;
+  position: fixed;
+  left: 50%;
+  top: 20px;
+  z-index: 200;
+  transform:translateX(-50%);
+  background-color: #FFF;
+  transition: opacity .3s,top .4s,-webkit-transform .4s;
+  transition: opacity .3s,transform .4s,top .4s;
+  transition: opacity .3s,transform .4s,top .4s,-webkit-transform .4s;
+  padding: 15px 15px 15px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50px;
+  border: 6px solid #9CF;
+}
+.tip p {
+    color: #9CF;
+    font-size: 15px;
+}

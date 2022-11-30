@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Unsubscribe</title>
+    <meta charset="UTF-8">
+
+    <link rel="icon" type="static/image/x-icon" href="/static/image/原神logo.ico"/><!--网页图标-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/login.css">
+    <link rel="stylesheet" href="static/css/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="static/css/chunk-element.b496abee.css">
+    <link rel="stylesheet" href="static/css/openWindow.css">
+    <style>
+        html,
+        body,
+        p,
+        ul,
+        li {
+            font-family: 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, 'Hiragino Sans GB', sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+        }
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            background: #f5efe3; /*页面背景色*/
+        }
+        .wrapper {
+            max-width: 600px;
+            min-width: 320px;
+            position: relative;
+            left: 50%;
+            top:50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+        .brand {
+            width: 480px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .brand a {
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+        .content {
+            background: #fff;
+            margin: 0 auto;
+            border: 1px solid #ececec;
+            border-radius: 10px;
+            box-shadow: 1px 0 1px solid #ececec;
+            margin: 20px;
+            background-color: #fff;
+        }
+        .content-header {
+            border-bottom: 1px solid #eee;
+        }
+        .unsub-title {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            padding: 13px;
+            margin: 0;
+            font-size: 20px;
+            font-weight: normal;
+            color:#000000; /*表单文字颜色*/
+        }
+        .content-body {
+            border-bottom: 1px solid #eee;
+            padding: 0px 30px;
+            min-height: 280px;
+        }
+        .content-footer {
+            padding: 15px;
+        }
+        .select-reason {
+            margin-bottom: 20px;
+        }
+        .select-reason label {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            display: block;
+            margin: 15px 0;
+            cursor: pointer;
+            font-size: 16px;
+            color:#000000; /*表单文字颜色*/
+        }
+        .btn {
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            border-color: transparent;
+            cursor: pointer;
+            font-weight: 500;
+            padding: 9px 19px;
+            font-size: 14px;
+            border-radius: 4px;
+        }
+        #count{
+            font-size: 18px;
+            color:#0044e9;
+        }
+        #jump_url_btn{
+            position: absolute;
+            left: -999px;
+            top: -999px;
+            visibility: hidden;
+            width: 1px;
+            height: 1px;
+        }
+
+        .mhy-account-flow-dialog-content {
+            width: 400px;
+            height: 346px;
+            background-color: #fff;
+            border-radius: 4px;
+            padding: 20px 25px;
+            position: relative;
+            top: 6%;
+            left: 12.5%;
+            margin-top: 58px;
+
+            /*margin:0 auto*/
+        }
+        .close-icon {
+            position: absolute;
+            transform: translateX(570px);
+            left: 4%;
+            width: 16px;
+            height: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div role="alert" class="el-message el-message--warning tip" style="z-index: 2112;">
+    <!--    <i class="el-message__icon el-icon-warning">-->
+    <!--        已经添加到控制台-->
+    <!--    </i>-->
+    <p class="el-message__content">已经添加到控制台</p>
+</div>
+<div class="wrapper">
+    <div class="brand">
+        <a href="#" class="logo">
+            <img src="/static/image/原神主页logo.png" alt="">
+        </a>
+    </div>
+    <!--表单背景色 START-->
+    <div class="content" style="background-color: #ffffff">
+        <div id="showBox">
+            <!--表单文字颜色控制元素过多，我就写在style里面了，没写在标签上，具体看上面style样式的备注-->
+            <div class="content-header">
+                <h2 class="unsub-title">你确定要取消订阅吗？(Are you sure to unsubscribe?)</h2>
+            </div>
+            <div class="content-body">
+                <div class="select-reason">
+                    <label>
+                        <input type="radio" name="reason" value="0">我不想再收到此类邮件(I don&#39;t want to receive such email anymore)
+                    </label>
+                    <label>
+                        <input type="radio" name="reason" value="1">这不是我订阅的(I didn&#39;t subscribe it)
+                    </label>
+                    <label>
+                        <input type="radio" name="reason" value="2">这是垃圾邮件(This is a spam email)
+                    </label>
+                    <label>
+                        <input type="radio" name="reason" value="3">这是欺诈邮件, 我要举报(This is a fraud email, i want to report it)
+                    </label>
+                </div>
+                <div class="mhy-account-flow mhy-account-flow-dialog ys-theme is-pc" style="display: none" id="login">
+                    <div class="mhy-account-flow-dialog-content" id="login1">
+                        <div class="mhy-account-flow-login">
+                            <img src="static/image/mihuayouLOGo.png" class="logo">
+                            <img src="static/image/X.png" class="close-icon">
+                        </div>
+                        <div class="mhy-account-flow-tabs tabs-flex">
+                            <div class="tab-item active">
+                                <span id="yzmloginers">验证码登录</span>
+                            </div>
+                            <div class="tab-item ">
+                                <span id="mimaloginers">密码登录</span>
+                            </div>
+                        </div>
+                        <div class="mhy-account-flow-form-input">
+                            <div class="input-container">
+                                <input type="tel" placeholder="邮箱" id="containerinput" maxlength="20">
+                            </div>
+                            <p class="error-text">*邮箱不能为空</p>
+                            <p class="error-text" style="display: none;" id="MobilePhoneFormat">*邮箱格式错误</p>
+                        </div>
+                        <div class="mhy-account-flow-form-input">
+                            <div class="input-container">
+                                <div class="mhy-toast" style="display: none;">请输入正确的邮箱地址</div>
+                                <input id="mimaInput" type="tel" placeholder="验证码" maxlength="12">
+                                <div onclick="getVerifyCode()" class="input-inner-btn captcha-login-inner-btn"
+                                     id="VerificationCode">
+                                    获取验证码
+                                </div>
+                            </div>
+                        </div>
+                        <div></div>
+                        <div class="mhy-login-button">
+                            <button id="LoginFirst" onclick="toLoginFirst()" type="submit" class="login-btn">登录</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <a class="header__login" style="display: none"></a>
+            </div>
+            <div class="content-footer">
+                <!-- confirmButton: 确定按钮背景色，confirmText：确定按钮文字颜色， yes：确定按钮文字翻译-->
+                <button onclick="sure()" class="btn btn-highlight" style="background-color: #ffffff; color:#606266">确定(Confirm)</button>
+                <!-- confirmButton: 取消按钮背景色，confirmText：取消按钮文字颜色 ， no: 取消按钮文字翻译-->
+                <button onclick="closeWin()" class="btn btn-default" style="background-color: #ffffff; color:#606266">取消(Cancel) </button>
+            </div>
+        </div>
+        <div id="showAlert" style="padding:30px;display:none;">
+            <p>退订成功(Unsubscribe successfully) <span id="showCountDown"><strong id="count">3</strong>s</span></p>
+        </div>
+        <div id="showErro" style="padding:30px;display:none;">
+            <!-- web 没有订阅失败语言配置项-->
+            <p>取消订阅失败！(Unsubscribe failed!)</p>
+        </div>
+        <a href="" id="jump_url_btn" target="_self"></a>
+    </div>
+    <!--表单背景色 END-->
+</div>
+<script type="text/javascript">
+
+
+
+
+    var timer = null, count = 3; //倒计时3s
+    function getCheckValue() {
+        var radiobox = document.getElementsByName('reason');
+        for (var i = 0; i < radiobox.length; i++) {
+            if (radiobox[i].checked) {
+                return radiobox[i].value;
+            }
+        }
+        return;
+    }
+    function countDown(){
+        if(timer){
+            timer = null;
+            clearInterval(timer);
+            return false;
+        }
+        timer = setInterval(function(){
+            if(count <= 1){
+                timer = null;
+                clearInterval(timer);
+                document.querySelector('#jump_url_btn').click();
+                return false;
+            }
+            count--;
+            document.querySelector('#count').innerHTML = count;
+        },1000)
+    }
+    function sure() {
+        var reason = getCheckValue();
+        if(!reason) {execTip("请选择一个原因!"); return;}
+        $.ajax({  //验证身份
+            type: "get",
+            url: '/api/auth/guest/isGuest',
+            async: false,
+            dataType: "json",
+            xhrFields: {
+                withCredentials: true,
+            },
+            success: function (data) {
+                if (data.code === 200) {
+                    //开始取消订阅
+                    $.ajax({  //验证身份
+                        type: "get",
+                        url: '/api/email/unsubscribe',
+                        async: false,
+                        dataType: "json",
+                        xhrFields: {
+                            withCredentials: true,
+                        },
+                        success: function (data) {
+                            if (data.code === 200) {
+                                execTip("取消订阅成功!")
+                                document.getElementById('showBox').style.display = 'none';
+                                document.getElementById('showAlert').style.display = 'block';
+                                if(""){
+                                    countDown();
+                                } else {
+                                    document.getElementById('showCountDown').style.display = 'none';
+                                }
+
+                            }  else if (data.code !== 200) {
+                                execTip(data.message);
+                                document.getElementById('showBox').style.display = 'none';
+                                document.getElementById('showError').style.display = 'block';
+
+
+                            }
+                        },
+                        error: function () {
+                            window.location = "../../500page.html";
+                        },
+                    });
+
+                } else if (data.code === 401) {
+                    //先登录
+                    execTip("请先登录!");
+                    $("#login").css("display", 'block');
+
+
+                } else if (data.code !== 200) {
+                    execTip(data.message);
+                    document.getElementById('showBox').style.display = 'none';
+                    document.getElementById('showError').style.display = 'block';
+
+
+                }
+            },
+            error: function () {
+                window.location = "../../500page.html";
+            },
+        });
+    }
+    function closeWin() {
+        window.opener = null;
+        window.open("", "_self");
+        window.close();
+    }
+</script>
+<script src="/static/js/MiJing.js"></script>
+<script src="/static/js/unsubscribe.js"></script>
+<script src="/static/js/login.js"></script>
+<script src="static/js/chunk-element.aea415bb.js"></script>
+<script src="static/js/chunk-index.4b9bdf29.js"></script>
+</body>
+</html>

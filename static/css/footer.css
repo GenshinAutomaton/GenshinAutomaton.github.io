@@ -1,0 +1,128 @@
+.footer {
+  position: relative;
+  margin: 100px auto;
+  top: 0;
+  width: 90%;
+  border-radius: 30px;
+  padding: 40px;
+  border: 10px dashed #CCCCFF;
+  transition: .2s;
+  background-color: #FFF;
+  display: flex;
+  justify-content: left;
+  font-size: 14px;
+}
+.footer:hover{
+  transition: .2s;
+  top: -20px;
+  box-shadow: 0px 10px 18px 18px rgba(0, 0, 0, 0.3);
+}
+.footer .copyright-text {
+    padding-top: 10px;
+}
+.footer a {
+    color: #fff;
+}
+.footer:after{
+    clear: both;
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    visibility: hidden;
+}
+.footer_text {
+    padding-right: 20%;
+    padding-left: 15px;
+}
+.go-top {
+    background-color: #CCCCFF;
+    bottom: 2em;
+    right: 2em;
+    font-size: 22px;
+    display: none;
+    position: fixed;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+.go-top:hover {
+    background: #99CCFF;
+    color: #fff;
+}
+
+.music {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    margin: 20px;
+}
+.msc_player {
+    position: relative;
+    width: 230px;
+    background: #FBFBFB;
+    border: 2px solid #FFF;
+    border-radius: 30px;
+    padding: 15px 25px;
+    box-shadow: inset 10px 10px 20px rgba(0,0,0,0.1),
+                inset -10px -10px 20px rgba(255,255,255,1);
+}
+.msc_title_bg {
+    transition: .2s;
+    background: #FFF;
+    padding: 0 15px 20px;
+    opacity: 0;
+    border-radius: 15px;
+    transform: translateY(50px);
+}
+.msc_title {
+    font-weight: 400;
+    color: #9CF;
+    display: inline-flex;
+    text-align: center;
+    flex-direction: column;
+    width: 140px;
+}
+.msc_btns {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.msc_btns span {
+    width: 35px;
+    height: 35px;
+    transition: .2s;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.1), -10px -10px 10px rgba(255,255,255,1);
+}
+
+.msc_btns span:hover {
+    box-shadow: 0px 0px 0px rgba(0,0,0,0.1),
+                0px 0px 0px rgba(255,255,255,1),
+                inset 10px 10px 20px rgba(0,0,0,0.1),
+                inset -10px -10px 20px rgba(255,255,255,1);
+}
+.msc_btns span.msc_play {
+    width: 50px;
+    height: 50px;
+}
+.msc_btns span img {
+    width: 20px;
+}
+.msc_btns span.msc_play img { 
+    width: 40px;
+}
