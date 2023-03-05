@@ -3,7 +3,7 @@
   background: #CCF;
 }
 ::-webkit-scrollbar {
-    width: 10px;
+    width: .1rem;
     background-color: #99CCFF;
 }
 ::-webkit-scrollbar-thumb {
@@ -16,7 +16,7 @@
         rgba(255, 255, 255, 0.4) 75%,
         transparent 75%,
         transparent);
-    border-radius: 32px;
+    border-radius: .32rem;
 }
 ::-webkit-scrollbar-track {
     background-color: #CCCCFF;
@@ -32,6 +32,7 @@ body {
     font-weight: 400;
     overflow-x: hidden !important;
     background: url(../image/back.jpg);
+    font-size: .14rem;
 }
 html,body {
     width: 100%;
@@ -41,8 +42,8 @@ html {
 }
 p {
     color: #828282;
-    letter-spacing: 0.8px;
-    line-height: 28px;
+    letter-spacing: 0.008rem;
+    line-height: 0.28rem;
 }
 strong {
     color: #f1c11a;

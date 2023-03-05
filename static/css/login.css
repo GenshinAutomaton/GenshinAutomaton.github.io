@@ -1,14 +1,14 @@
 .login {
   position: absolute;
-  width: 147px;
+  width: 1.47rem;
   left: 83%;
-  height: 65px;
+  height: .65rem;
   z-index: 100;
 }
 .login__header {
 
   position: absolute;
-  font-size: 19px;
+  font-size: .19rem;
   background: none;
   margin: 0 !important;
   z-index: 100;
@@ -16,46 +16,46 @@
 }
 .login__img {
   position: absolute;
-  left: 120px;
-  top: 20px;
-  width: 27px;
-  height: 27px;
+  left: 1.2rem;
+  top: .2rem;
+  width: .27rem;
+  height: .27rem;
   opacity: 0.6;
 }
 .login__sub{
   position: absolute;
-  top: 65px;
+  top: .65rem;
   left: 83%;
-  height: 50px;
-  width: 150px;
+  height: .5rem;
+  width: 1.5rem;
   transition: .2s;
   opacity: 0;
   transform: translateY(-100px);
-  border-radius: 10px;
+  border-radius: .1rem;
   background-color: #CCCCFF;
   z-index: 90;
 }
 .login__sub li {
-    line-height: 50px;
+    line-height: .5rem;
     letter-spacing: 0px;
     color: #FFF;
     text-align: center;
-    font-size: 15px;
-    border-radius: 10px;
+    font-size: .15rem;
+    border-radius: .1rem;
     list-style-type: none;
 }
 .login:hover + .login__sub, .login__sub:hover {
-  height: 100px;
+  height: 1rem;
   opacity: 1;
-  transform: translateY(5px);
+  transform: translateY(.05rem);
 }
 .login__sub li:hover {
   cursor: pointer;
   transition: box-shadow .2s ease-in-out;
   box-shadow: 0px 0px 0px rgba(100,100,100,0.1),
   0px 0px 0px #CCCCFF,
-  inset 18px 18px 30px rgba(100,100,100,0.1),
-  inset -18px -18px 30px #CCCCFF;
+  inset .18rem .18rem .3rem rgba(100,100,100,0.1),
+  inset -0.18rem -0.18rem .3rem #CCCCFF;
 }
 .mhy-account-flow-dialog {
   position: fixed;
@@ -75,20 +75,19 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-size: 14px;
+  font-size: 0.14px;
   font-family: Microsoft YaHei, \\5fae\8f6f\96c5\9ed1, miui, Helvetica, Arial,
     sans-serif;
 }
 .mhy-account-flow-dialog-content {
-    width: 400px;
+    width: 4rem;
     background-color: #fff;
-    border-radius: 20px;
-    border: 10px solid #99CCFF;
-    padding: 20px 25px 30px;
+    border-radius: .2rem;
+    border: .1rem solid #99CCFF;
+    padding: .2rem .25rem .3rem;
     position: relative;
-    top: 100px;
-    left: 38.5%;
-    margin-top: 100px;
+    top: 2rem;
+    margin: auto;
 }
 .mhy-account-flow-login {
   background-color: #fff;
@@ -96,21 +95,21 @@
 .mhy-account-flow.is-pc .close-icon {
   position: absolute;
   z-index: 100;
-  top: 10px;
-  transform: translateX(310px);
-  width: 16px;
-  height: 16px;
-  margin: 10px;
+  top: .1rem;
+  transform: translateX(3.1rem);
+  width: .16rem;
+  height: .16rem;
+  margin: .1rem;
   cursor: pointer;
   transition: .2s;
-  border-radius: 4px;
+  border-radius: .04rem;
 }
 .mhy-account-flow.is-pc .close-icon:hover {
   transition: .2s;
   background-color: rgba(204, 204, 255, .5);
 }
 .mhy-account-flow.is-pc .mhy-account-flow-tabs {
-  font-size: 18px;
+  font-size: .18rem;
 }
 .mhy-account-flow-tabs .tab-item.active {
   font-weight: 700;
@@ -118,15 +117,15 @@
 }
 .mhy-account-flow-tabs .tab-item {
   text-align: center;
-  padding: 10px;
+  padding: .1rem;
   cursor: pointer;
   display: inline-block;
   -webkit-tap-highlight-color: transparent;
   position: relative;
 }
 .mhy-account-flow-form-input {
-  padding-top: 5px;
-  font-size: 12px;
+  padding-top: .05rem;
+  font-size: .12rem;
   position: relative;
 }
 .mhy-account-flow-form-input .input-container {
@@ -134,14 +133,14 @@
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  border-radius: 30px;
-  border: 3px solid #CCCCFF;
-  height: 50px;
+  border-radius: .3rem;
+  border: .03rem solid #CCCCFF;
+  height: .5rem;
 }
 .mhy-account-flow.is-pc .mhy-account-flow-form-input .input-container input {
-  font-size: 16px;
-  line-height: 26px;
-  border-radius: 25px;
+  font-size: .16rem;
+  line-height: .26rem;
+  border-radius: .25rem;
 }
 .mhy-account-flow-tabs.tabs-flex {
   display: -webkit-box;
@@ -151,14 +150,14 @@
   flex-wrap: nowrap;
   align-content: space-around;
   justify-content: space-around;
-  margin-bottom: 15px;
+  margin-bottom: .15rem;
 }
 .mhy-account-flow-tabs .tab-item.active:before {
   content: "";
   position: absolute;
-  width: 25px;
-  height: 3px;
-  border-radius: 2px;
+  width: .25rem;
+  height: .03rem;
+  border-radius: .02rem;
   background-color: #19a3ff;
   left: 0;
   right: 0;
@@ -172,9 +171,9 @@
 #mimaloginer::before {
   content: "";
   position: absolute;
-  width: 25px;
-  height: 3px;
-  border-radius: 2px;
+  width: .25rem;
+  height: .03rem;
+  border-radius: .02rem;
   background-color: #3b4354;
 
   left: 0;
@@ -184,8 +183,8 @@
 }
 .mhy-account-flow-tabs {
   width: 100%;
-  font-size: 14px;
-  border-bottom: 1px solid #f6f6f6;
+  font-size: .14rem;
+  border-bottom: .01rem solid #f6f6f6;
   position: relative;
   color: #7f858a;
 }
@@ -201,18 +200,18 @@
   min-width: 0;
   width: 100%;
   color: #3c4044;
-  padding: 10px 12px;
+  padding: .01rem .12rem;
   background-color: transparent;
   outline: none;
-  line-height: 18px;
-  font-size: 12px;
-  border-radius: 25px;
+  line-height: .18rem;
+  font-size: .12rem;
+  border-radius: .25rem;
 }
 .mhy-account-flow-form-input .input-container .input-inner-btn {
-  width: 84px;
+  width: .84rem;
   text-align: center;
-  padding: 13px 0;
-  font-size: 12px;
+  padding: .13rem 0;
+  font-size: .12rem;
   color: #7f858a;
   cursor: pointer;
   line-height: 1;
@@ -222,51 +221,51 @@
   .mhy-account-flow-form-input
   .input-container
   .input-inner-btn {
-  font-size: 16px;
-  width: 120px;
-  line-height: 20px;
+  font-size: .16rem;
+  width: 1.2rem;
+  line-height: .2rem;
 }
 .mhy-account-flow-form-input .input-container .input-inner-btn:before {
   content: "";
-  border-left: 1px solid #f6f6f6;
+  border-left: .01rem solid #f6f6f6;
   float: left;
   height: 100%;
 }
 .mhy-account-flow.is-pc .mhy-account-flow-login .mhy-login-button {
-  margin-top: 25px;
+  margin-top: .25rem;
 }
 .mhy-account-flow.is-pc button {
-  line-height: 48px;
-  font-size: 18px;
+  line-height: .48rem;
+  font-size: .18rem;
   cursor: pointer;
 }
 .login-btn {
-  margin-top: 5px;
+  margin-top: .05rem;
   transition: .2s;
 }
 .login-btn:hover {
   box-shadow: 0px 0px 0px rgba(100,100,100,0.1),
   0px 0px 0px #CCCCFF,
-  inset 18px 18px 30px rgba(100,100,100,0.1),
-  inset -18px -18px 30px #CCCCFF;
+  inset .18rem .18rem .3rem rgba(100,100,100,0.1),
+  inset -0.18rem -0.18rem .3rem #CCCCFF;
 }
 .mhy-account-flow.ys-theme button {
   border: none;
   background-color: #CCCCFF;
-  border-radius: 30px;
-  height: 50px;
+  border-radius: .3rem;
+  height: .5rem;
 }
 .mhy-account-flow button {
   display: block;
   width: 100%;
   color: #fff;
-  line-height: 38px;
+  line-height: .38rem;
   text-align: center;
-  font-size: 14px;
+  font-size: .14rem;
   outline: none;
 }
 .register-bar {
-  margin-top: 10px;
+  margin-top: .1rem;
 }
 .login-tip {
   position: relative;
@@ -277,14 +276,14 @@
 }
 .mhy-account-flow.is-pc .mhy-account-flow-login .login-tip,
 .mhy-account-flow.is-pc .mhy-account-flow-login .register-bar {
-  font-size: 18px;
+  font-size: .18rem;
 }
 .login-tip a {
-  font-size: 16px;
+  font-size: .16rem;
 }
 .mhy-account-flow-login .register-bar {
-  font-size: 12px;
-  margin-top: 12px;
+  font-size: .12rem;
+  margin-top: .12rem;
 }
 .mhy-account-flow a {
   transform: translateY(50px);
@@ -295,13 +294,13 @@
 }
 .mhy-account-flow.is-pc .mhy-account-flow-login .login-tip,
 .mhy-account-flow.is-pc .mhy-account-flow-login .register-bar {
-  font-size: 16px;
+  font-size: .16rem;
 }
 
 .mhy-account-flow-login .login-tip {
-  transform: translateY(20px);
-  font-size: 12px;
-  margin-top: 10px;
+  transform: translateY(.2rem);
+  font-size: .12rem;
+  margin-top: .1rem;
 }
 .mhy-account-flow * {
   -webkit-tap-highlight-color: transparent;
@@ -313,7 +312,7 @@
 
 #mimalogin {
   position: relative;
-  top: -464px;
+  top: -4.64rem;
 }
 .mihoyo-cn-footer .footer-link a:first-child {
   margin-left: 0;
@@ -330,7 +329,7 @@
   color: #999;
 }
 .mihoyo-cn-footer .footer-link a {
-  margin: 0 8px 0 5px;
+  margin: 0 .08rem 0 .05rem;
 }
 .mihoyo-cn-footer a,
 .mihoyo-cn-footer a:link,
@@ -338,23 +337,23 @@
 .mihoyo-cn-footer a:active {
   color: #999;
   text-decoration: none;
-  font-size: 14px;
+  font-size: .14rem;
 }
 .mhy-toast {
   position: fixed;
   top: 50%;
-  transform: translateX(105px) translateY(-5px);
-  padding: 8px 14px;
+  transform: translateX(1.05rem) translateY(-0.05rem);
+  padding: .08rem .14rem;
   background-color: rgba(0, 0, 0, 0.6);
   line-height: 1.5;
   max-width: 60%;
-  border-radius: 4px;
+  border-radius: .04rem;
   color: #fff;
   z-index: 9999;
-  font-size: 14px;
+  font-size: .14rem;
 }
 .error-text {
   color: #f96149;
-  font-size: 12px;
-  line-height: 22px;
+  font-size: .12rem;
+  line-height: .22rem;
 }
